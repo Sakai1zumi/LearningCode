@@ -1,0 +1,19 @@
+//输入一个整数，输出逆序三位数
+int main()
+{
+	int x = 0;
+	scanf("%d", &x);
+
+	char ch[3] = { 0 };
+	int i = 0;
+
+	for (i = 0;i < 3;i++)
+	{
+		ch[i] = x % 10;
+		x /= 10;
+	}
+	int sum = ch[0]*100 + ch[1] * 10 + ch[2] * 1;
+	printf("%d\n", sum);
+
+	return 0;
+}
