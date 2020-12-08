@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
 //输入一个整数，输出逆序三位数
 int main()
 {
