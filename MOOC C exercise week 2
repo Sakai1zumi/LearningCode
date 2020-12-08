@@ -1,5 +1,25 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
+//整数逆序
+int main()
+{
+	int x = 0;
+	scanf("%d", &x);
+	int digit = 0;
+	int ret = 0;
+
+	while (x > 0)
+	{
+		digit = x % 10;
+		//printf("%d", digit);
+		ret = ret * 10 + digit;
+		//printf("x=%d, digit=%d, ret=%d\n", x, digit, ret);
+		x /= 10;
+	}
+	printf("%d\n", ret);
+	return 0;
+}
+
 //输入一个整数，输出逆序三位数
 int main()
 {
